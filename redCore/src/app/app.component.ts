@@ -34,6 +34,11 @@ export class AppComponent {
       title: 'Tutoriales',
       url: '/tutoriales',
       icon: 'ios-book'
+    },
+    {
+      title: "Calendario",
+      url: '/calendario',
+      icon: 'calendar'
     }
   ];
 
