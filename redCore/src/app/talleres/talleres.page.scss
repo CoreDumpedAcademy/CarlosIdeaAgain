@@ -1,0 +1,25 @@
+.ad{
+    position: absolute;
+    clip: rect(0px, 100px, 100px, 0px)
+}
+
+ion-thumbnail{
+    height: 100px;
+    width: 80px
+}
+
+.header-text{
+    margin-left: 16px;
+    font-size: 20px;
+}
+
+.ad-title{
+    font-size: 25px;
+}
+.ad-date{
+    font-size: 5px;
+    color: grey;
+}
+.ad-des{
+    color: darkslategrey;
+}

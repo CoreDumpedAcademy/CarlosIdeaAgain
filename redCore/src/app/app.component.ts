@@ -29,6 +29,11 @@ export class AppComponent {
       title: 'Foros',
       url: '/lista-foros',
       icon: 'ios-chatbubbles'
+    },
+    {
+      title: "Talleres",
+      url: '/talleres',
+      icon: 'ios-construct'
     }
   ];
 
