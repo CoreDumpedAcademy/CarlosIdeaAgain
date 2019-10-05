@@ -37,7 +37,7 @@ export class Tab2Page {
       },
 
       {
-        titular: 'la mayoria de las empresas han sufrido una brecha de datos',
+        titular: 'La mayoria de las empresas han sufrido una brecha de datos',
         // tslint:disable-next-line: max-line-length
         descripcion: 'En los últimos tres años, casi dps terceras partes (60 por ciento) de las empresas que han sufrido una vulneración de sus datos. Según un nuevo informe global de Bitdefender, a cuyo juicio las empresas que aún no han sido atacadas esperan vivir este problema en breve.',
         // tslint:disable-next-line: max-line-length
