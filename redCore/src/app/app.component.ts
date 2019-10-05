@@ -16,9 +16,9 @@ export class AppComponent {
 
   pages = [
     {
-      title: 'Calendario',
+      title: 'Noticias',
       url: '/core/home',
-      icon: 'ios-calendar'
+      icon: 'home'
     },
     {
       title: 'Foros',

@@ -135,4 +135,8 @@ export class ListaPreguntasPage implements OnInit {
   post() {
     this.router.navigateByUrl('post');
   }
+
+  goBack() {
+    this.router.navigateByUrl('lista-foros');
+  }
 }

@@ -58,6 +58,10 @@ export class ListaForosPage implements OnInit {
     this.loadData();
   }
 
+  goBack() {
+    this.router.navigateByUrl('core/home');
+  }
+
   createForo() {
     this.router.navigateByUrl('crear-foro');
   }

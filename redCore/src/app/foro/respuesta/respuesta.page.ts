@@ -69,4 +69,8 @@ export class RespuestaPage implements OnInit {
   ngOnInit() {
     this.loadData();
   }
+
+  goBack() {
+    this.router.navigateByUrl('lista-preguntas');
+  }
 }
