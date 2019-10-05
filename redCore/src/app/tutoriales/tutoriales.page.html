@@ -1,0 +1,148 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Tus tutoriales</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Control de versiones</ion-card-subtitle>
+          <ion-card-title>Git y Github resumidos</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+           <b>Aquí tienes un resumen de acciones y comandos útiles de git y github, así que ponte cómodo y ¡Git ready to learn!</b>
+            Desde Github
+            Dentro de tu cuenta de GitHub, para crear un nuevo repositorio debes hacer click en el icono + y seleccionar New Repository.
+            
+            Tras elegir un nombre, puedes elegir si quieres hacer el proyecto público o privado. Hazlo público si quieres compartirlo con el mundo o permitir que tus mentores lo vean.
+            
+            Es recomendable inicializar los proyectos con un README para poder clonarlos directamente. El README es útil para resumir rápidamente tu repositorio también. Las licencias son opcionales y establecen el uso que otros pueden dar a tu código. Por ejemplo la GNU General Public License v3.0, establece tu proyecto como uno de código de libre uso y obliga a que los proyectos que deriven de él lo sean también. El gitignore nos será útil para no subir archivos descomunales que vienen por defecto con el uso de algunos lenguajes.
+            
+            Una vez hecho esto puedes hacer click en Create Repository.
+            
+            Si has inicializado el repositorio con un README, puedes hacer click en el botón verde de Clone or download y copiar el link de clonado del repositorio.
+            
+             
+            
+            Desde tu ordenador en git
+            Aquí encontrarás algunos comandos de git que te serán útiles. Los parámetros entre corchetes sustitúyelos por los tuyos propios (No incluyas los corchetes)
+            
+            git config --global user.name [Tu nombre de usuario] Configurar tu nombre de usuario.
+            
+            git config --global user.email [Tu email] Configurar tu mail de github
+            
+            git clone [Tu link de repositorio clonado] Te descarga una versión local de tu repositorio.
+            
+            git pull Trae los cambios remotos a tu repositorio local
+            
+            git status Te enseña el estado de tu repositorio local. Por ejemplo si tienes algún cambio que puedes mandar a tu repositorio remoto o si hay algún archivo local que puedes añadir.
+            
+            git add [Nombre de archivo]Coloca el archivo en una cola para ser añadido al siguiente commit
+            
+            git add * Añade todos los archivos nuevos o modificados en local a la cola para el siguiente commit.
+            
+            git commit -m ["Tu mensaje de commit"] Comitea los cambios añadidos y genera una entrada en el log de git con el mensaje introducido y un código de sha único
+            
+            git push LLeva los cambios a tu repositorio remoto
+            
+            Al final, el orden más recomendable que debes seguir siempre después de hacer cambios localmente para subirlos a tu repositorio remoto será
+            
+            git pull
+            git status
+            git add *
+            git commit -m ["Tu mensaje de commit"]
+            git push
+            Git tiene un millón de utilidades más que no vienen explicadas en esta breve guía. Si tienes alguna duda o sugerencia estaremos encantados de escucharte.
+            <ion-img class="octocat" src="../assets/octocatguay.jpg" ></ion-img>
+  
+          </ion-card-content>
+          <ion-item>
+              <ion-button fill="outline" slot="end">¡Quiero verlo!</ion-button>
+            </ion-item>
+      </ion-card><br>
+      <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Hackathon</ion-card-subtitle>
+            <ion-card-title>Hackathon 2 gen</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+              Tras la charla introductoria al equipo de Hackathon, todo está listo para comenzar con la iniciativa.
+
+              Si te la perdiste aquí tienes una transcripción resumen de los puntos que se trataron bit.ly/2oB0pPn
+              
+              No dejes pasar esta oportunidad de mejorar como desarrollador en nuestro grupo formativo y pasártelo en grande con gente que comparte tus intereses. Únete al grupo de telegram del equipo bit.ly/2mhVBxx
+              <ion-img class="octocat" src="../assets/core.jpg" ></ion-img>
+    
+            </ion-card-content>
+            <ion-item>
+                <ion-button fill="outline" slot="end">¡Quiero verlo!</ion-button>
+              </ion-item>
+        </ion-card>
+        <br>
+     <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Como empezar con C#</ion-card-subtitle>
+            <ion-card-title>Pierde el miedo a C#!</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+              Le damos la bienvenida a los tutoriales de introducción a C#. Se empieza con lecciones interactivas que se pueden ejecutar en el explorador.
+              En las primeras lecciones se explican los conceptos de C# con la utilización de pequeños fragmentos de código. Aprenderá los datos básicos de la sintaxis de C# y cómo trabajar con tipos de datos como cadenas, números y booleanos. Se trata de material totalmente interactivo, que le permitirá empezar a escribir y ejecutar código en cuestión de minutos. En las primeras lecciones se asume que no dispone de conocimientos previos sobre programación o sobre el lenguaje C#.
+              Todos los tutoriales de introducción posteriores a la lección Hola mundo se encuentran disponibles mediante la experiencia de explorador en línea o en el entorno de desarrollo local. Al final de cada tutorial, decida si desea continuar con la siguiente lección en línea o en su propia máquina. Hay vínculos que le ayudarán a configurar el entorno y continuar con el siguiente tutorial en su máquina.
+              Hola mundo
+              En el tutorial Hola mundo, creará el programa de C# más básico. Explorará el tipo string y cómo trabajar con texto.
+              Números en C#
+              En el tutorial Números en C#, obtendrá información sobre cómo se almacenan los números en los equipos y cómo realizar cálculos con distintos tipos numéricos. Conocerá los datos básicos sobre cómo realizar redondeos y cálculos matemáticos con C#. Este tutorial también está disponible para ejecutarse localmente en su máquina.
+              En este tutorial se asume que ha completado la lección Hola mundo.
+              Bifurcaciones y bucles
+              En el tutorial Ramas y bucles se explican los datos básicos sobre la selección de diferentes rutas de acceso de la ejecución del código en función de los valores almacenados en variables. Aprenderá los datos básicos del flujo de control, es decir, cómo los programas toman decisiones y eligen distintas acciones. Este tutorial también está disponible para ejecutarse localmente en su máquina.
+              En este tutorial se supone que ha completado las lecciones Hola mundo y Números en C#.
+              Colección de listas
+              En la lección Colección de listas se ofrece información general sobre el tipo de colección de listas que almacena secuencias de datos. Se explica cómo agregar y quitar elementos, buscarlos y ordenar las listas. Explorará los diferentes tipos de listas. Este tutorial también está disponible para ejecutarse localmente en su máquina.
+              En este tutorial se presupone que ha completado las lecciones que se muestran anteriormente.
+              Introducción a las clases
+              Este tutorial solo se encuentra disponible para ejecutarse en el equipo con un entorno de desarrollo local propio y .NET Core. Creará una aplicación de consola y conocerá las características básicas orientadas a objetos que forman parte del lenguaje C#.
+              En este tutorial se presupone que ha completado los tutoriales de introducción en línea y ha instalado el SDK de .NET Core y Visual Studio Code.
+              <ion-img class="octocat" src="../assets/logo.jpg" ></ion-img>
+    
+            </ion-card-content>
+            <ion-item>
+                <ion-button fill="outline" slot="end">¡Quiero verlo!</ion-button>
+              </ion-item>
+        </ion-card>
+        <br>
+      <ion-card>
+           <ion-card-header>
+             <ion-card-subtitle>Como empezar con python</ion-card-subtitle>
+             <ion-card-title>Aprende Python</ion-card-title>
+           </ion-card-header>
+         
+           <ion-card-content>
+              Python es un lenguaje de programación poderoso y fácil de aprender. Cuenta con estructuras de datos eficientes y de alto nivel y un enfoque simple pero efectivo a la programación orientada a objetos. La elegante sintaxis de Python y su tipado dinámico, junto con su naturaleza interpretada, hacen de éste un lenguaje ideal para scripting y desarrollo rápido de aplicaciones en diversas áreas y sobre la mayoría de las plataformas.
+
+              El intérprete de Python y la extensa biblioteca estándar están a libre disposición en forma binaria y de código fuente para las principales plataformas desde el sitio web de Python, https://www.python.org/, y puede distribuirse libremente. El mismo sitio contiene también distribuciones y enlaces de muchos módulos libres de Python de terceros, programas y herramientas, y documentación adicional.
+              
+              El intérprete de Python puede extenderse fácilmente con nuevas funcionalidades y tipos de datos implementados en C o C++ (u otros lenguajes accesibles desde C). Python también puede usarse como un lenguaje de extensiones para aplicaciones personalizables.
+              
+              Este tutorial introduce de manera informal al lector a los conceptos y características básicas del lenguaje y el sistema de Python. Es bueno tener un interprete de Python a mano para experimentar, sin embargo todos los ejemplos están aislados, por lo tanto el tutorial puede leerse estando desconectado.
+              
+              Para una descripción de los objetos y módulos estándar, mirá La referencia de la biblioteca. La referencia de la biblioteca provee una definición más formal del lenguaje. Para escribir extensiones en C o C++, leé Extendiendo e Integrando el Intérprete de Python y la Referencia de la API Python/C. Hay también numerosos libros que tratan a Python en profundidad.
+              
+              Este tutorial no pretende ser exhaustivo ni tratar cada una de las características, o siquiera las características más usadas. En cambio, introduce la mayoría de las características más notables de Python, y te dará una buena idea del gusto y estilo del lenguaje. Luego de leerlo, serás capaz de leer y escribir módulos y programas en Python, y estarás listo para aprender más de los variados módulos de la biblioteca de Python descriptos en La referencia de la biblioteca.
+              
+              También vale la pena mirar el glosario.
+               <ion-img class="python" src="../assets/python.jpg" ></ion-img>
+     
+             </ion-card-content>
+             <ion-item>
+                 <ion-button fill="outline" slot="end">¡Quiero verlo!</ion-button>
+               </ion-item>
+         </ion-card>
+   </ion-content>

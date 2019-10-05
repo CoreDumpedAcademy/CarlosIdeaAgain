@@ -37,7 +37,7 @@ export class Tab2Page {
       },
 
       {
-        titular: 'la mayoria de las empresas han sufrido una brecha de datos',
+        titular: 'La mayoria de las empresas han sufrido una brecha de datos',
         // tslint:disable-next-line: max-line-length
         descripcion: 'En los últimos tres años, casi dps terceras partes (60 por ciento) de las empresas que han sufrido una vulneración de sus datos. Según un nuevo informe global de Bitdefender, a cuyo juicio las empresas que aún no han sido atacadas esperan vivir este problema en breve.',
         // tslint:disable-next-line: max-line-length
@@ -57,7 +57,52 @@ export class Tab2Page {
         texto2: 'Sin embargo, el uso de soluciones en la nube conlleva un nuevo abanico de problemas. Por ejemplo, la mayoría de los encuestados (70 %) no cumplen con el Reglamento General de Protección de Datos',
         noticias: 'Antivirus',
         image: './assets/Foto3.jpg'
+      },
+      {
+        titular: 'El innovador exoesqueleto que ayudó a un hombre paralítico a mover sus cuatro extremidades con estímulos mentales',
+        // tslint:disable-next-line: max-line-length
+        descripcion: 'Un gran número de empresas no cree que su antivurus tenga la capacidad de detectar de forma adecuada y completa las amenazas y otras actividades anómalas en sus redes de TI. Un nuevo informe de ManageEngine, una empresa de softaware de gestion de TI para empresas, reveló que sólo el 12 por ciento de los encuestados que trabajan en grandes empresas tienen plena confianza en sus soluciones antivirus. En el caso de las pequeñas y medianas empresas, la situación es algo mejor, aunque sigue siendo preocupante, ya que sólo el 21 % tiene plena confianza.',
+        // tslint:disable-next-line: max-line-length
+        texto: 'Con el fin de hacer frente a estos problemas, las PYME recurren cada vez más a la tecnología en la nube. El informe indica que prácticamente todas las empresas (96%) utilizan algún tipo de tecnologías cloud, siendo los principales determinates la seguridad (55%), las herramientas CRM (39%), la productividad empresarial(38%) y los análisis y elaboración de informes (38%)',
+        // tslint:disable-next-line: max-line-length
+        texto2: 'Sin embargo, el uso de soluciones en la nube conlleva un nuevo abanico de problemas. Por ejemplo, la mayoría de los encuestados (70 %) no cumplen con el Reglamento General de Protección de Datos',
+        noticias: 'Antivirus',
+        image: './assets/Hombre.jpg'
+      },
+      {
+        titular: '¿Cuán rápido eres escribiendo en el celular? 3 consejos para aumentar tu velocidad',
+        // tslint:disable-next-line: max-line-length
+        descripcion: 'Un gran número de empresas no cree que su antivurus tenga la capacidad de detectar de forma adecuada y completa las amenazas y otras actividades anómalas en sus redes de TI. Un nuevo informe de ManageEngine, una empresa de softaware de gestion de TI para empresas, reveló que sólo el 12 por ciento de los encuestados que trabajan en grandes empresas tienen plena confianza en sus soluciones antivirus. En el caso de las pequeñas y medianas empresas, la situación es algo mejor, aunque sigue siendo preocupante, ya que sólo el 21 % tiene plena confianza.',
+        // tslint:disable-next-line: max-line-length
+        texto: 'Con el fin de hacer frente a estos problemas, las PYME recurren cada vez más a la tecnología en la nube. El informe indica que prácticamente todas las empresas (96%) utilizan algún tipo de tecnologías cloud, siendo los principales determinates la seguridad (55%), las herramientas CRM (39%), la productividad empresarial(38%) y los análisis y elaboración de informes (38%)',
+        // tslint:disable-next-line: max-line-length
+        texto2: 'Sin embargo, el uso de soluciones en la nube conlleva un nuevo abanico de problemas. Por ejemplo, la mayoría de los encuestados (70 %) no cumplen con el Reglamento General de Protección de Datos',
+        noticias: 'Antivirus',
+        image: './assets/hombre2.jpg'
+      },
+      {
+        titular: 'BECAS FUNDACIÓN CAROLINA - MÁSTER UNIVERSITARIO EN SOFTWARE Y SISTEMAS',
+        // tslint:disable-next-line: max-line-length
+        descripcion: 'Un gran número de empresas no cree que su antivurus tenga la capacidad de detectar de forma adecuada y completa las amenazas y otras actividades anómalas en sus redes de TI. Un nuevo informe de ManageEngine, una empresa de softaware de gestion de TI para empresas, reveló que sólo el 12 por ciento de los encuestados que trabajan en grandes empresas tienen plena confianza en sus soluciones antivirus. En el caso de las pequeñas y medianas empresas, la situación es algo mejor, aunque sigue siendo preocupante, ya que sólo el 21 % tiene plena confianza.',
+        // tslint:disable-next-line: max-line-length
+        texto: 'Con el fin de hacer frente a estos problemas, las PYME recurren cada vez más a la tecnología en la nube. El informe indica que prácticamente todas las empresas (96%) utilizan algún tipo de tecnologías cloud, siendo los principales determinates la seguridad (55%), las herramientas CRM (39%), la productividad empresarial(38%) y los análisis y elaboración de informes (38%)',
+        // tslint:disable-next-line: max-line-length
+        texto2: 'Sin embargo, el uso de soluciones en la nube conlleva un nuevo abanico de problemas. Por ejemplo, la mayoría de los encuestados (70 %) no cumplen con el Reglamento General de Protección de Datos',
+        noticias: 'Antivirus',
+        image: './assets/feliz.jpg'
+      },
+      {
+        titular: 'PROGRAMA FUNDACIÓN SEPI – TELEFÓNICA 2019',
+        // tslint:disable-next-line: max-line-length
+        descripcion: 'Un gran número de empresas no cree que su antivurus tenga la capacidad de detectar de forma adecuada y completa las amenazas y otras actividades anómalas en sus redes de TI. Un nuevo informe de ManageEngine, una empresa de softaware de gestion de TI para empresas, reveló que sólo el 12 por ciento de los encuestados que trabajan en grandes empresas tienen plena confianza en sus soluciones antivirus. En el caso de las pequeñas y medianas empresas, la situación es algo mejor, aunque sigue siendo preocupante, ya que sólo el 21 % tiene plena confianza.',
+        // tslint:disable-next-line: max-line-length
+        texto: 'Con el fin de hacer frente a estos problemas, las PYME recurren cada vez más a la tecnología en la nube. El informe indica que prácticamente todas las empresas (96%) utilizan algún tipo de tecnologías cloud, siendo los principales determinates la seguridad (55%), las herramientas CRM (39%), la productividad empresarial(38%) y los análisis y elaboración de informes (38%)',
+        // tslint:disable-next-line: max-line-length
+        texto2: 'Sin embargo, el uso de soluciones en la nube conlleva un nuevo abanico de problemas. Por ejemplo, la mayoría de los encuestados (70 %) no cumplen con el Reglamento General de Protección de Datos',
+        noticias: 'Antivirus',
+        image: './assets/sepi.jpg'
       }
+
 
     ];
 
