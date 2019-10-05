@@ -26,7 +26,7 @@ export class AppComponent {
       icon: 'ios-chatbubbles'
     },
     {
-      title: "Talleres",
+      title: 'Talleres',
       url: '/talleres',
       icon: 'ios-construct'
     }
