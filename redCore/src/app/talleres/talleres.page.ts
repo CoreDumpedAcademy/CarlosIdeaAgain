@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Platform } from '@ionic/angular';
+import { PopoverController } from '@ionic/angular';
+import { PopinfoComponent } from './popinfo/popinfo.component';
 
 @Component({
   selector: 'app-talleres',
@@ -7,7 +9,7 @@ import { Platform } from '@ionic/angular';
   styleUrls: ['./talleres.page.scss'],
 })
 export class TalleresPage implements OnInit {
-  constructor(public platform: Platform) { }
+  constructor(public platform: Platform, public popoverCtr: PopoverController) { }
 
   public workshopAds = [
     {
@@ -31,6 +33,18 @@ export class TalleresPage implements OnInit {
   ]
 
   public devWidth = (this.platform.width() > 992);
+
+  async showPopover(){
+    const popover = await this.popoverCtr.create({
+      component: PopinfoComponent
+    });
+
+    await popover.present();
+  }
+
+  public clicktest(event: any) {
+    console.log("himom");
+  }
 
   ngOnInit() {
   }

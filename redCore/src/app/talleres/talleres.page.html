@@ -8,24 +8,27 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-      <p class="header-text">
-        <br>
-          ¡Echale un vistazo a nuestros proximos talleres!
-      </p>
-
-    <ion-item *ngFor="let ad of workshopAds">
-
-      <ion-thumbnail slot="start">
-          <img src="/../../assets/workshop_ads/{{ ad.image }}" alt="">
-      </ion-thumbnail>
-
-      <p>
-          <span class="ad-title"> <b>{{ad.title}}</b>  </span><br>
-          <span class="ad-date"> {{ad.date}} </span> <br>
-          <span class="ad-des"> {{ad.description}} </span>
-      </p>
+  <div class="wrapper">
+      <ion-list>
+          <p class="header-text">
+            <br>
+              ¡Echale un vistazo a nuestros proximos talleres!
+          </p>
         
-    </ion-item>
-  </ion-list>
+        <ion-item *ngFor="let ad of workshopAds">
+
+            <ion-thumbnail tappable (click)="showPopover()" slot="start">
+                  <img src="/../../assets/workshop_ads/{{ ad.image }}" alt="">
+            </ion-thumbnail>
+            
+            <p tappable (click)="showPopover()">
+                <span class="ad-title"> <b>{{ad.title}}</b>  </span><br>
+                <span class="ad-date"> {{ad.date}} </span> <br>
+                <span class="ad-des"> {{ad.description}} </span>
+            </p>
+
+        </ion-item>
+      </ion-list>
+  </div>
+  
 </ion-content>

@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { TalleresPage } from './talleres.page';
+import { PopinfoComponent } from './popinfo/popinfo.component';
 
 const routes: Routes = [
   {
@@ -15,12 +16,16 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  declarations: [TalleresPage, PopinfoComponent],
+  entryComponents: [
+    PopinfoComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes)
-  ],
-  declarations: [TalleresPage]
+  ]
+  
 })
 export class TalleresPageModule {}
