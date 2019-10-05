@@ -34,9 +34,10 @@ export class TalleresPage implements OnInit {
 
   public devWidth = (this.platform.width() > 992);
 
-  async showPopover(){
+  async showPopover(ad){
     const popover = await this.popoverCtr.create({
-      component: PopinfoComponent
+      component: PopinfoComponent,
+      componentProps: ad
     });
 
     await popover.present();
