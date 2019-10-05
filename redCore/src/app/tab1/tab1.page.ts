@@ -16,6 +16,7 @@ export class Tab1Page {
   email: string;
   user: User;
   hasLoaded = false;
+  hasLoadedB = false;
 
   picture: string;
   balance: number;
@@ -37,6 +38,7 @@ export class Tab1Page {
       promise.subscribe(
         (data: User) => {
           this.user = data;
+          this.hasLoadedB = true;
         },
         () => {
           this.router.navigateByUrl('login');
@@ -69,7 +71,8 @@ export class Tab1Page {
   }
 
   ionViewWillEnter() {
-   this.loadData();
+    this.hasLoaded = this.hasLoadedB = false;
+    this.loadData();
   }
 
 }

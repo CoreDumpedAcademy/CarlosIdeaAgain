@@ -15,7 +15,8 @@ const routes: Routes = [
     {path: 'post', loadChildren: './foro/post/post.module#PostPageModule'},
     {path: 'servicios', loadChildren: './servicios/servicios.module#ServiciosPageModule'},
     { path: 'nevera', loadChildren: './nevera/nevera.module#NeveraPageModule' },
-  { path: 'talleres', loadChildren: './talleres/talleres.module#TalleresPageModule' }
+  { path: 'talleres', loadChildren: './talleres/talleres.module#TalleresPageModule' },  { path: 'tutoriales', loadChildren: './tutoriales/tutoriales.module#TutorialesPageModule' }
+
 ];
 
 @NgModule({

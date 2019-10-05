@@ -16,14 +16,9 @@ export class AppComponent {
 
   pages = [
     {
-      title: 'Calendario',
+      title: 'Noticias',
       url: '/core/home',
-      icon: 'ios-calendar'
-    },
-    {
-      title: 'Nevera',
-      url: '/nevera',
-      icon: 'ios-cart'
+      icon: 'home'
     },
     {
       title: 'Foros',
@@ -31,9 +26,14 @@ export class AppComponent {
       icon: 'ios-chatbubbles'
     },
     {
-      title: "Talleres",
+      title: 'Talleres',
       url: '/talleres',
       icon: 'ios-construct'
+    },
+    {
+      title: 'Tutoriales',
+      url: '/tutoriales',
+      icon: 'ios-book'
     }
   ];
 

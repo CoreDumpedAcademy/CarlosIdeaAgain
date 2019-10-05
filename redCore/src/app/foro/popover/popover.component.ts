@@ -12,10 +12,11 @@ export class PopoverComponent implements OnInit {
   constructor(private Popover: PopoverController, private navParams: NavParams) { }
 
   data: Respuesta;
-  answer: boolean;
+  answer = true;
 
   ngOnInit() {
     this.data = this.navParams.data.data;
+    console.log(this.data);
     if (this.navParams.data.data !== '') {
       if (this.data.text.length > 50) {
         this.data.text = this.data.text.slice(0, 50);

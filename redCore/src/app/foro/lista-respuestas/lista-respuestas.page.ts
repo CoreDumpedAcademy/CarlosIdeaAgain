@@ -68,4 +68,8 @@ export class ListaRespuestasPage implements OnInit {
   contestar() {
     this.router.navigateByUrl('respuesta');
   }
+
+  goBack() {
+    this.router.navigateByUrl('lista-preguntas');
+  }
 }
