@@ -20,6 +20,7 @@ const UserSchema = Schema({
   rol: { type: Number, default: 0 },
   picture: String,
   bio: String,
+  password: String,
 });
 
 module.exports = mongoose.model('UserSchema', UserSchema);

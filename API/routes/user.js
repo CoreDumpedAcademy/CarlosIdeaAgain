@@ -5,6 +5,8 @@ const service = require('../middleware/service');
 router.post('/', userController.addUser); // Añadir usuario
 router.put('/:username', userController.editUser); // EDITAR usuario
 
+router.post('/login', userController.logIn); // USER LOGIN
+
 router.get('/:email', service.checkToken, userController.getUser); // GET DE UN USUARIO
 
 // REQUIEREN MIDDLEWARE QUE COMPRUEBE SI ES ADMIN

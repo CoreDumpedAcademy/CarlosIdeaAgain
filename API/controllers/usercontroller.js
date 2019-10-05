@@ -61,6 +61,19 @@ function userUsado(req, res) {
   });
 }
 
+function logIn(req, res) {
+  const { body } = req;
+  if (!body || !body.email || !body.password) return res.status(400).send('BAD PETITION');
+  UserSchema.findOne({ email: body.email }, (err, user) => {
+    if (err) return res.status(500).send(err);
+    if (!user) return res.status(404).send('User not found');
+    if (user.password !== body.password) return res.status(403).send('Wrong password');
+
+    return res.status(200).send(user);
+  });
+  return 'ok';
+}
+
 module.exports = {
   addUser,
   getUsers,
@@ -68,4 +81,5 @@ module.exports = {
   getUser,
   emailUsado,
   userUsado,
+  logIn,
 };
