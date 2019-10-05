@@ -13,19 +13,19 @@ export class TalleresPage implements OnInit {
     {
       title: 'Web Testing',
       image: 'WebTesting5.png',
-      description: 'Learn to use bots for web testing!',
+      description: 'Aprende a usar bot para probar tus paginas web',
       date: '05-10-2019'
     },
     {
-      title: 'Hackathon Team',
+      title: ' Introducción Equipo de Hackathon',
       image: 'HackathonTeam.jpg',
-      description: 'Learn about our Hackathon team!',
+      description: 'Aprede sobre nuestro equipo de Hackathon',
       date: '05-10-2019'
     },
     {
-      title: 'C workshop',
+      title: 'Taller de C',
       image: 'tallerC.png',
-      description: 'Enroll in an introductory course to C',
+      description: '¡Súbete a bordo de nuestro curso de C, grumete!',
       date: '18-10-2019'
     }
   ]
