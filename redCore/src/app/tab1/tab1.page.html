@@ -1,4 +1,4 @@
-  <ion-header *ngIf="hasLoaded && hasLoadedB">
+  <ion-header *ngIf="hasLoaded">
     <ion-toolbar>
       <ion-title (click)="loadData()" style="text-align: center">
         @{{user.user.username}}
@@ -6,10 +6,10 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content *ngIf="hasLoaded && hasLoadedB">
+  <ion-content *ngIf="hasLoaded">
     <div class="banner">
       <br><br><br>
-      <img src="{{this.picture}}">
+      <img src="http://fridge.coredumped.es/{{this.user.user.picture}}">
       <br>
       <br>
     </div>

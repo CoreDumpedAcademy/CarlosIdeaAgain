@@ -16,9 +16,6 @@ export class Tab1Page {
   email: string;
   user: User;
   hasLoaded = false;
-  hasLoadedB = false;
-
-  picture: string;
   balance: number;
   status: string;
 
@@ -38,24 +35,13 @@ export class Tab1Page {
       promise.subscribe(
         (data: User) => {
           this.user = data;
-          this.hasLoadedB = true;
+          this.hasLoaded = true;
         },
         () => {
           this.router.navigateByUrl('login');
         }
       );
     });
-    this.auth.getUser().then(promise => promise.subscribe(
-      (data: {
-        avatarImage: string,
-        balance: number,
-        status: string
-      }) => {
-        this.picture = this.auth.AUTH_SERVER_ADRESS + data.avatarImage;
-        this.balance = data.balance;
-        this.status = data.status;
-        this.hasLoaded = true;
-      }));
   }
 
   verInsignia(ins: {
@@ -71,7 +57,6 @@ export class Tab1Page {
   }
 
   ionViewWillEnter() {
-    this.hasLoaded = this.hasLoadedB = false;
     this.loadData();
   }
 

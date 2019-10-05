@@ -21,16 +21,16 @@ export class LoginPage implements OnInit {
     ) { }
 
   async login(form) {
-    this.auth.login(form.value).subscribe(() => {
-      this.api.checkMail(form.value.email).subscribe(
-        () => {
-          this.router.navigateByUrl('');
-        },
-        () => {
-          this.router.navigateByUrl('nuevos-usuarios');
-      });
-    }, () => {
-      this.err = 'Usuario o contraseña incorrecta';
+    this.api.logIn(form.value).subscribe(() => {
+      this.storage.set('EMAIL', form.value.email);
+      this.storage.set('TOKEN', 'OK'); // <---- horrible
+      this.router.navigateByUrl('');
+    }, (error) => {
+      if (error.status === 404) {
+        this.err = 'Usuario no encontrado; ¿Seguro que te has registrado?';
+      } else if (error.status === 403) {
+        this.err = 'Contraseña incorrecta.';
+      } else { this.err = 'Error del servidor'; }
     });
   }
 

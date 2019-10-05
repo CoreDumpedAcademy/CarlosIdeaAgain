@@ -1,7 +1,6 @@
 import { AuthserviceService } from './../authservice.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Form } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -15,8 +14,8 @@ export class RegisterPage implements OnInit {
   ngOnInit() {
   }
 
-  register(form: Form) {
-
+  register(form) {
+    console.log(form.form.value);
   }
 
   goBack() {
