@@ -21,11 +21,6 @@ export class AppComponent {
       icon: 'ios-calendar'
     },
     {
-      title: 'Nevera',
-      url: '/nevera',
-      icon: 'ios-cart'
-    },
-    {
       title: 'Foros',
       url: '/lista-foros',
       icon: 'ios-chatbubbles'
