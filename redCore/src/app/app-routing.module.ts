@@ -19,10 +19,10 @@ const routes: Routes = [
   { path: 'tutoriales', loadChildren: './tutoriales/tutoriales.module#TutorialesPageModule' },
   { path: 'calendario', loadChildren: './calendario/calendario.module#CalendarioPageModule' },
   { path: 'hackathons', loadChildren: './hackathons/hackathons.module#HackathonsPageModule' },
-  { path: 'empleo', loadChildren: './empleo/empleo.module#EmpleoPageModule' },  { path: 'buscausers', loadChildren: './buscausers/buscausers.module#BuscausersPageModule' },
+  { path: 'empleo', loadChildren: './empleo/empleo.module#EmpleoPageModule' },
+  { path: 'modal-page', loadChildren: './talleres/modal-page/modal-page.module#ModalPagePageModule' },
+  { path: 'buscausers', loadChildren: './buscausers/buscausers.module#BuscausersPageModule' },
   { path: 'verperfil', loadChildren: './verperfil/verperfil.module#VerperfilPageModule' }
-
-
 ];
 
 @NgModule({
