@@ -11,7 +11,7 @@
     <ion-content>
         <ion-col>
         <ion-avatar>
-            <img src="{{picture}}">
+            <img (click)="goToProfile()" src="{{picture}}">
         </ion-avatar>
         <div class="ion-text-center">
             <h3>@{{username}}</h3>

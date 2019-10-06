@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Buscador de usuarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="hasLoaded">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+  <ion-grid>
+    <ion-searchbar placeholder="Usuario"></ion-searchbar>
+    <ion-card *ngFor="let user of users">
+      <ion-grid>
+        <ion-item lines="none">
+            <ion-col>
+              <ion-avatar>
+                <img src="{{user.picture}}">
+              </ion-avatar>
+            </ion-col>
+            <ion-col>
+              <ion-chip (click)="loadProfile(user.email)" outline="true" color="primary">
+                <ion-label>@{{user.username}}</ion-label>
+              </ion-chip>
+            </ion-col>
+        </ion-item>
+      </ion-grid>
+    </ion-card>
+  </ion-grid>
+  <ion-fab color="primary" vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button (click)="goBack()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
