@@ -32,6 +32,11 @@ export class AppComponent {
       icon: 'ios-construct'
     },
     {
+      title: 'Hackatones',
+      url: '/hackathons',
+      icon: 'ionitron'
+    },
+    {
       title: 'Tutoriales',
       url: '/tutoriales',
       icon: 'ios-book'
