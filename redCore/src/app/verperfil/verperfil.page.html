@@ -1,0 +1,39 @@
+<ion-header *ngIf="hasLoaded">
+    <ion-toolbar>
+      <ion-title (click)="loadData()" style="text-align: center">
+        @{{user.user.username}}
+      </ion-title>
+      <ion-buttons slot="end">
+          <img src='../../assets/AccessDenied.png' alt="AccessDenied"
+          style="width: 30px; height: 30px; margin-right: 20px">
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content *ngIf="hasLoaded">
+    <div class="banner">
+      <br><br><br>
+      <img src="{{this.user.user.picture}}">
+      <br>
+      <br>
+    </div>
+    <ion-item>
+      <ion-label text-center>Insignias</ion-label>
+    </ion-item><br>
+      <ion-slides [options]="sliderConfig">
+        <ion-slide *ngFor="let ins of user.user.insignias">
+            <img src="../../assets/insignias/{{ins.nombre}}.png" (click)="verInsignia(ins)">
+        </ion-slide>
+      </ion-slides>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-fab color="primary" vertical="bottom" horizontal="start" slot="fixed">
+      <ion-fab-button (click)="goBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ion-content>
