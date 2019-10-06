@@ -21,6 +21,8 @@ const UserSchema = Schema({
   picture: { type: String, default: 'http://monumentfamilydentistry.com/wp-content/uploads/2015/11/user-placeholder.png' },
   bio: String,
   password: String,
+  sigue: [String],
+  seguidores: [String],
 });
 
 module.exports = mongoose.model('UserSchema', UserSchema);

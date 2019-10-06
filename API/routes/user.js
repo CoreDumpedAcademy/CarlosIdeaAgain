@@ -7,6 +7,8 @@ router.put('/:username', userController.editUser); // EDITAR usuario
 
 router.post('/login', userController.logIn); // USER LOGIN
 
+router.post('/seguir/:email', userController.seguir); // EMAIL SIGUE A BODY
+
 router.get('/:email', /* service.checkToken, */ userController.getUser); // GET DE UN USUARIO
 
 // REQUIEREN MIDDLEWARE QUE COMPRUEBE SI ES ADMIN
