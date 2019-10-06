@@ -16,5 +16,7 @@ export interface User {
     picture: string;
     balance: number,
     status: string;
+    sigue: [];
+    seguidores: [];
   };
 }

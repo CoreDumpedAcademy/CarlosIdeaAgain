@@ -42,4 +42,12 @@ export class APIService {
     return this.http.get(`${this.API}user/`);
   }
 
+  seguir(quien, a) { // QUIEN sigue a A
+    return this.http.post(`${this.API}user/seguir/${quien}`, a);
+  }
+
+  getUser(email) {
+    return this.http.get(`${this.API}user/${email}`);
+  }
+
 }

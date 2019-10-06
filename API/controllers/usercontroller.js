@@ -21,7 +21,7 @@ function getUsers(req, res) {
   });
 }
 
-function seguir(req, res) { // EMAIL SIGUE A BODY
+function seguir(req, res) { // PARAM SIGUE A BODY
   const { email } = req.params;
   UserSchema.findOne({ email }, (err, user) => {
     if (err) return res.status(500).send(err);

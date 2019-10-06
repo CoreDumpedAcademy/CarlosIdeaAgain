@@ -17,6 +17,16 @@
       <br>
       <br>
     </div>
+    <ion-grid>
+      <ion-item>
+        <ion-col>
+          <ion-button expand="block" (click)="seguir()" *ngIf="!found">FOLLOW</ion-button>
+          <ion-button expand="block" (click)="unfollow()" *ngIf="found">UNFOLLOW</ion-button>
+        </ion-col>
+        <ion-col>Followers: {{user.user.seguidores.length}}</ion-col>
+        <ion-col>Following: {{user.user.sigue.length}}</ion-col>
+      </ion-item>
+    </ion-grid>
     <ion-item>
       <ion-label text-center>Insignias</ion-label>
     </ion-item><br>

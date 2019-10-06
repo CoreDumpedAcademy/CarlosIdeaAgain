@@ -17,6 +17,7 @@ export class VerperfilPage implements OnInit {
   hasLoaded = false;
   balance: number;
   status: string;
+  found = false;
 
   sliderConfig = {
     loop: false,
@@ -34,7 +35,7 @@ export class VerperfilPage implements OnInit {
       promise.subscribe(
         (data: User) => {
           this.user = data;
-          this.hasLoaded = true;
+          this.alreadyFollowing();
         },
         () => {
           this.router.navigateByUrl('login');
@@ -61,6 +62,34 @@ export class VerperfilPage implements OnInit {
 
   goBack() {
     this.router.navigateByUrl('buscausers');
+  }
+
+  async seguir() {
+    const a = await this.storage.get('VISITA');
+    const quien = await this.storage.get('EMAIL');
+    const body = {
+      email: a
+    };
+    this.API.seguir(quien, body).subscribe(() => {
+      location.reload();
+    }, () => {
+      location.reload();
+    });
+  }
+
+  async alreadyFollowing() {
+    const current = await this.storage.get('EMAIL');
+    this.user.user.seguidores.forEach(seguidor => {
+
+      if (seguidor === current) {
+        this.found = true;
+      }
+    });
+    this.hasLoaded = true;
+  }
+
+  unfollow() {
+
   }
 
 }
