@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+      <ion-title>Ofertas de Empleo</ion-title>
+      <ion-buttons slot="end">
+          <img src='../../assets/AccessDenied.png' alt="AccessDenied"
+          style="width: 30px; height: 30px; margin-right: 20px">
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div class="wrapper">
+        <ion-list>
+            <p class="header-text">
+              <br>
+                Las últimas ofertas de trabajo
+            </p>
+          
+          <ion-item *ngFor="let ad of jobOfferAds">
+  
+              <ion-thumbnail tappable (click)="showPopover(ad)" slot="start">
+                    <img src="/../../assets/job_offer_ads/{{ ad.image }}" alt="">
+              </ion-thumbnail>
+              
+              <p tappable (click)="showPopover(ad)">
+                  <span class="ad-title"> <b>{{ad.puesto}}</b>  </span><br>
+                  <span class="ad-date"> {{ad.lugar}} </span> <br>
+                  <span class="ad-des"> {{ad.empresa}} </span>
+              </p>
+  
+          </ion-item>
+        </ion-list>
+    </div>
+    
+  </ion-content>

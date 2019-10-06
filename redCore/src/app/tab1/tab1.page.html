@@ -3,13 +3,17 @@
       <ion-title (click)="loadData()" style="text-align: center">
         @{{user.user.username}}
       </ion-title>
+      <ion-buttons slot="end">
+          <img src='../../assets/AccessDenied.png' alt="AccessDenied"
+          style="width: 30px; height: 30px; margin-right: 20px">
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
   <ion-content *ngIf="hasLoaded">
     <div class="banner">
       <br><br><br>
-      <img src="http://fridge.coredumped.es/{{this.user.user.picture}}">
+      <img src="{{this.user.user.picture}}">
       <br>
       <br>
     </div>

@@ -15,8 +15,11 @@ const routes: Routes = [
     {path: 'post', loadChildren: './foro/post/post.module#PostPageModule'},
     {path: 'servicios', loadChildren: './servicios/servicios.module#ServiciosPageModule'},
     { path: 'nevera', loadChildren: './nevera/nevera.module#NeveraPageModule' },
-  { path: 'talleres', loadChildren: './talleres/talleres.module#TalleresPageModule' },  { path: 'tutoriales', loadChildren: './tutoriales/tutoriales.module#TutorialesPageModule' },
-  { path: 'calendario', loadChildren: './calendario/calendario.module#CalendarioPageModule' }
+  { path: 'talleres', loadChildren: './talleres/talleres.module#TalleresPageModule' },
+  { path: 'tutoriales', loadChildren: './tutoriales/tutoriales.module#TutorialesPageModule' },
+  { path: 'calendario', loadChildren: './calendario/calendario.module#CalendarioPageModule' },
+  { path: 'hackathons', loadChildren: './hackathons/hackathons.module#HackathonsPageModule' },
+  { path: 'empleo', loadChildren: './empleo/empleo.module#EmpleoPageModule' }
 
 ];
 
