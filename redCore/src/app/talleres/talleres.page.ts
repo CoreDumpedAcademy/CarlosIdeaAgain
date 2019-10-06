@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Platform } from '@ionic/angular';
-import { PopoverController } from '@ionic/angular';
-import { PopinfoComponent } from './popinfo/popinfo.component';
+import { ModalController,  } from '@ionic/angular';
+import { ModalPagePage } from './modal-page/modal-page.page';
 
 @Component({
   selector: 'app-talleres',
@@ -9,7 +8,8 @@ import { PopinfoComponent } from './popinfo/popinfo.component';
   styleUrls: ['./talleres.page.scss'],
 })
 export class TalleresPage implements OnInit {
-  constructor(public platform: Platform, public popoverCtr: PopoverController) { }
+
+  constructor(private modalController: ModalController) { }
 
   public workshopAds = [
     {
@@ -32,23 +32,17 @@ export class TalleresPage implements OnInit {
     }
   ]
 
-  public devWidth = (this.platform.width() > 992);
-
-  /*
-  async showPopover(ad){
-    
-    const popover = await this.popoverCtr.create({      //Buscar solocion compatible con
-      component: PopinfoComponent,                      //los foros para popovers
-      componentProps: ad
+  
+  async openModal(data){
+    const modal = await this.modalController.create({
+      component: ModalPagePage,
+      componentProps: data,
     });
-
-    await popover.present();
-    
+    return await modal.present();
   }
-  */
- 
-  public clicktest(event: any) {
-    console.log("himom");
+
+  closeModal(){
+    this.modalController.dismiss({dismissed: true});
   }
 
   ngOnInit() {
