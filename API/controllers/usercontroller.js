@@ -50,6 +50,39 @@ function seguir(req, res) { // PARAM SIGUE A BODY
     return res.status(200).send('Todo correcto');
   });
 }
+/* WIP
+function unfollow(req, res) { // PARAM HACE UNFOLLOW A BODY
+  const { email } = req.params;
+  UserSchema.findOne({ email }, (err, user) => {
+    if (err) return res.status(500).send(err);
+    if (!user) return res.status(404).send('User not found');
+
+    for (let i = 0; i < user.sigue.lenght; i++) {
+      if (user.sigue[i] ===)
+    }
+    UserSchema.updateOne({ email }, user, (error, updated) => {
+      if (err) return res.status(500).send(error);
+      if (!updated) return res.status(404).send('...what');
+
+      return 'ok';
+    });
+    return 'ok';
+  });
+  UserSchema.findOne({ email: req.body.email }, (err, user) => {
+    if (err) return res.status(500).send(err);
+    if (!user) return res.status(404).send('User not found');
+
+    user.seguidores.push(email);
+    UserSchema.updateOne({ email: req.body.email }, user, (error, updated) => {
+      if (error) return res.status(500).send(err);
+      if (!updated) return res.status(404).send('...wtf?');
+
+      return 'ok';
+    });
+    return res.status(200).send('Todo correcto');
+  });
+}
+*/
 
 function getUser(req, res) {
   const { email } = req.params;

@@ -18,6 +18,7 @@ export class VerperfilPage implements OnInit {
   balance: number;
   status: string;
   found = false;
+  self = false;
 
   sliderConfig = {
     loop: false,
@@ -79,13 +80,18 @@ export class VerperfilPage implements OnInit {
 
   async alreadyFollowing() {
     const current = await this.storage.get('EMAIL');
-    this.user.user.seguidores.forEach(seguidor => {
+    if (current === this.user.user.email) {
+      this.self = true;
+      this.hasLoaded = true;
+    } else {
+      this.user.user.seguidores.forEach(seguidor => {
 
-      if (seguidor === current) {
-        this.found = true;
-      }
-    });
-    this.hasLoaded = true;
+        if (seguidor === current) {
+          this.found = true;
+        }
+      });
+      this.hasLoaded = true;
+    }
   }
 
   unfollow() {

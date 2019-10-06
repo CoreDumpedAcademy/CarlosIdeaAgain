@@ -20,8 +20,9 @@
     <ion-grid>
       <ion-item>
         <ion-col>
-          <ion-button expand="block" (click)="seguir()" *ngIf="!found">FOLLOW</ion-button>
-          <ion-button expand="block" (click)="unfollow()" *ngIf="found">UNFOLLOW</ion-button>
+          <ion-button expand="block" (click)="seguir()" *ngIf="!found && !self">FOLLOW</ion-button>
+          <ion-button expand="block" (click)="unfollow()" [disabled]="true" *ngIf="found && !self">UNFOLLOW</ion-button>
+          <ion-button expand="block" (click)="seguir()" *ngIf="self" [disabled]="true">FOLLOW</ion-button>
         </ion-col>
         <ion-col>Followers: {{user.user.seguidores.length}}</ion-col>
         <ion-col>Following: {{user.user.sigue.length}}</ion-col>
