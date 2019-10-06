@@ -1,3 +1,4 @@
+import { User } from './../interfaces/user';
 import { Storage } from '@ionic/storage';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
