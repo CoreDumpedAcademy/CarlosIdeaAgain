@@ -18,7 +18,7 @@ const UserSchema = Schema({
     slack: { type: String, default: '' },
   },
   rol: { type: Number, default: 0 },
-  picture: String,
+  picture: { type: String, default: 'http://monumentfamilydentistry.com/wp-content/uploads/2015/11/user-placeholder.png' },
   bio: String,
   password: String,
 });

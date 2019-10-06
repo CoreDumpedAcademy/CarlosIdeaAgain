@@ -1,3 +1,4 @@
+import { Storage } from '@ionic/storage';
 import { User } from './interfaces/user';
 import { APIService } from './api.service';
 import { AuthserviceService } from './authservice.service';
@@ -48,6 +49,7 @@ export class AppComponent {
     private router: Router,
     private service: APIService,
     private auth: AuthserviceService,
+    private storage: Storage
   ) {
 
     this.initializeApp();
@@ -60,7 +62,7 @@ export class AppComponent {
     this.auth.getEmail().then((email) => {
       this.service.tieneCuenta(email).then(promise => {
         promise.subscribe((data: User) => {
-          this.picture = 'http://fridge.coredumped.es' + data.user.picture;
+          this.picture = data.user.picture;
           this.username = data.user.username;
         });
       }).catch(() => {
@@ -68,6 +70,11 @@ export class AppComponent {
         this.username = 'Usuario';
       });
     });
+  }
+
+  logOut() {
+    this.storage.clear();
+    this.router.navigateByUrl('login');
   }
 
 
