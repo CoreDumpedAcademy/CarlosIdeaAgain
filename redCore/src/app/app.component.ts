@@ -34,12 +34,17 @@ export class AppComponent {
     {
       title: 'Hackatones',
       url: '/hackathons',
-      icon: 'ionitron'
+      icon: 'laptop'
     },
     {
       title: 'Tutoriales',
       url: '/tutoriales',
       icon: 'ios-book'
+    },
+    {
+      title: 'Empleo',
+      url: '/empleo',
+      icon: 'paper'
     }
   ];
 
