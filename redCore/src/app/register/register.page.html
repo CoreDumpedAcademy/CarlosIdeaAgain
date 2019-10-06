@@ -5,7 +5,7 @@
           <ion-col align-self-centered size-md="6" size-lg="5" size-xs="12">
             <div text-center>
               <h3>¡Estás apunto de crear un usuario!</h3>
-              Con tu cuenta tendrás acceso a todos los servicios de Core. Rellena el siguiente formulario para crear tu cuenta
+              Con tu cuenta tendrás acceso a todos los servicios. Rellena el siguiente formulario para crear tu cuenta
             </div>
               <div padding>
                 <ion-item>
@@ -23,6 +23,7 @@
                 <ion-item>
                   <ion-input name="confirm" type="password" placeholder="Password again" ngModel required></ion-input>
                 </ion-item>
+                  <p *ngIf="err" style="text-align: center"> {{err}} </p>
               </div>
               <div padding>
                 <ion-button  size="large" type="submit" [disabled]="form.invalid" expand="block">Register</ion-button>

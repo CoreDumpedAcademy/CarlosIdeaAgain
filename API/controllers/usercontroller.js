@@ -5,7 +5,7 @@ function addUser(req, res) {
   const user = new UserSchema(req.body);
   user.save((err) => {
     if (err) return res.status(500).send(err);
-    return res.status(200).send('Datos guardados correctamente');
+    return res.status(200).send(user);
   });
 }
 
