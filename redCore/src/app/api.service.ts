@@ -38,4 +38,8 @@ export class APIService {
     return this.http.get(`${this.API}check/email/${email}`);
   }
 
+  getAllUsers() {
+    return this.http.get(`${this.API}user/`);
+  }
+
 }

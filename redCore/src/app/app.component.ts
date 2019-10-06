@@ -22,6 +22,11 @@ export class AppComponent {
       icon: 'home'
     },
     {
+      title: 'Buscador',
+      url: '/buscausers',
+      icon: 'contacts'
+    },
+    {
       title: 'Foros',
       url: '/lista-foros',
       icon: 'ios-chatbubbles'
@@ -42,7 +47,7 @@ export class AppComponent {
       icon: 'ios-book'
     },
     {
-      title: "Calendario",
+      title: 'Calendario',
       url: '/calendario',
       icon: 'calendar'
     },
@@ -85,6 +90,10 @@ export class AppComponent {
         this.username = 'Usuario';
       });
     });
+  }
+
+  goToProfile() {
+    this.router.navigateByUrl('core/profile');
   }
 
   logOut() {
