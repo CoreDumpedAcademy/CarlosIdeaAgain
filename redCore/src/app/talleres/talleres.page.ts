@@ -34,17 +34,19 @@ export class TalleresPage implements OnInit {
 
   public devWidth = (this.platform.width() > 992);
 
+  /*
   async showPopover(ad){
-    /*
+    
     const popover = await this.popoverCtr.create({      //Buscar solocion compatible con
       component: PopinfoComponent,                      //los foros para popovers
       componentProps: ad
     });
 
     await popover.present();
-    */
+    
   }
-
+  */
+ 
   public clicktest(event: any) {
     console.log("himom");
   }
